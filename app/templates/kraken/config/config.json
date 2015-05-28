@@ -1,0 +1,31 @@
+
+{
+  "express": {
+      "view engine": "jsx",
+      "view": "require:react-engine/lib/expressView"
+  },
+  "view engines": {
+      "jsx": {
+          "module": "react-engine/lib/server",
+          "renderer": {
+            "method": "create",
+              "arguments": [{
+                  "reactRoutes": "path:<PATH_TO_REACT-ROUTER_ROUTES>"
+              }]
+          }
+      }
+  },
+
+  "middleware": {
+    "static": {
+      "module": {
+        "arguments": ["path:./.build"]
+      }
+    },
+    "router": {
+      "module": {
+        "arguments": [{"directory": "path:./controllers"}]
+      }
+    }
+  }
+}

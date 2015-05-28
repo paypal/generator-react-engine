@@ -1,0 +1,40 @@
+{
+  "name": "kraken-sample",
+  "version": "0.1.0",
+  "description": "a sample kraken app to demonstrate react-engine integration",
+  "author": "Sam Selvanathan",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "engine-munger": "^0.2.0",
+    "express": "^4.3.0",
+    "kraken-devtools": "^1.0.0",
+    "kraken-js": "^1.0.1",
+    "localizr": "^0.1.6",
+    "node-jsx": "^0.13.3",
+    "react": "^0.13.3",
+    "react-engine": "^1.5.0",
+    "react-router": "^0.13.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^2.1.4",
+    "grunt-config-dir": "^0.3.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-copy-to": "0.0.10",
+    "grunt-localizr": "^0.1.4",
+    "grunt-mocha-cli": "^1.13.0",
+    "mocha": "^1.18.0",
+    "supertest": "^0.9.0"
+  },
+  "generator-kraken": {
+    "version": "1.1.2",
+    "template": false,
+    "css": false,
+    "js": "browserify",
+    "task": "grunt"
+  }
+}

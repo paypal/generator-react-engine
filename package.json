@@ -7,5 +7,12 @@
   "keywords": ["yeoman-generator", "react-engine"],
   "dependencies": {
     "yeoman-generator": "^0.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.paypal.com:vhwang/generator-react-engine.git"
+  },
+  "publishConfig": {
+    "registry": "http://npm.paypal.com"
   }
 }
