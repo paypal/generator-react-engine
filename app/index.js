@@ -47,5 +47,12 @@ module.exports = generators.Base.extend({
             this.templatePath(this.framework),
             this.destinationPath()
         );
+
+        // copy the common jshintrc file to .jshintrc, template files
+        // that start with '.' get skip if we just specify a directory
+        this.fs.copy(
+            this.templatePath('common/jshintrc'),
+            this.destinationPath('.jshintrc')
+        );
     }
 });

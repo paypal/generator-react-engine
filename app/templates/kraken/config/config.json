@@ -1,16 +1,19 @@
 
 {
   "express": {
-      "view engine": "jsx",
-      "view": "require:react-engine/lib/expressView"
+    "view engine": "jsx",
+    "view": "require:react-engine/lib/expressView",
+    "view cache": false,
+    "views": "path:./public/views"
   },
+
   "view engines": {
       "jsx": {
           "module": "react-engine/lib/server",
           "renderer": {
             "method": "create",
               "arguments": [{
-                  "reactRoutes": "path:<PATH_TO_REACT-ROUTER_ROUTES>"
+                  "reactRoutes": "path:./routes/react.jsx"
               }]
           }
       }

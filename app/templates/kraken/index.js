@@ -2,7 +2,7 @@
 
 var express = require('express');
 var kraken = require('kraken-js');
-
+var nodeJSX = require('node-jsx');
 
 var options, app;
 
@@ -16,6 +16,12 @@ options = {
          * Add any additional config setup or overrides here. `config` is an initialized
          * `confit` (https://github.com/krakenjs/confit/) configuration object.
          */
+        // install node-jsx, so that we
+        // can require `.jsx` files in node.
+        nodeJSX.install({
+            extension: '.jsx'
+        });
+
         next(null, config);
     }
 };

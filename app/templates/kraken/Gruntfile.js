@@ -9,7 +9,7 @@ module.exports = function (grunt) {
     });
 
     // Register group tasks
-    grunt.registerTask('build', [ 'jshint', 'browserify', 'i18n', 'copyto' ]);
+    grunt.registerTask('build', [ 'jshint', 'browserify' ]);
     grunt.registerTask('test', [ 'jshint', 'mochacli' ]);
 
 };
