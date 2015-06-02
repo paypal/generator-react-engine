@@ -20,18 +20,12 @@ var React = require('react');
 
 module.exports = React.createClass({
 
-  onButtonClick: function() {
-    alert('I was rendered on server side but I am clickable because of client mounting!');
-  },
-
   render: function render() {
 
     return (
       <Layout {...this.props}>
-        <div id='index'>
-          <h1>Hello {this.props.name}!</h1>
-          <button onClick={this.onButtonClick}>___Click Me___</button>
-        </div>
+        <h3>URL: {this.props.url} - Not Found(404)</h3>
+        <h6>I am a Plain vanilla react view</h6>
       </Layout>
     );
   }

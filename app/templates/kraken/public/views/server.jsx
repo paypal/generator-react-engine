@@ -30,7 +30,9 @@ module.exports = React.createClass({
             <Layout {...this.props}>
                 <div id='index'>
                     <h1>Hello {this.props.name}!</h1>
-                    <button onClick={this.onButtonClick}>___Click Me___</button>
+                    <button onClick={this.onButtonClick}>Click Me</button>
+                    <br/>
+                    <a href='/'>Click to go to an react-router rendered view</a>
                 </div>
             </Layout>
         );
