@@ -1,6 +1,6 @@
 {
   "name": "generator-react-engine",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A react-engine generator for Yeoman",
   "main": "app/index.js",
   "author": "Vu Hwang <vhwang@paypal.com>",
