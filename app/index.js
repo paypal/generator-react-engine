@@ -47,11 +47,15 @@ module.exports = generators.Base.extend({
         }.bind(this));
     },
     writing: function() {
-        var appRoot = this.appRoot = this.destinationPath(this.appName);
+        var appRoot;
         var package;
 
-        this.mkdir(appRoot);
-        process.chdir(appRoot);
+        // only create new folder under current if they did not take the default
+        if (this.appname !== this.appName) {
+            appRoot = this.destinationPath(this.appName);
+            this.mkdir(appRoot);
+            process.chdir(appRoot);
+        }
 
         package = this.fs.readJSON(this.templatePath('common/' + this.framework + '/package.json'));
         package.name = this.appName;
