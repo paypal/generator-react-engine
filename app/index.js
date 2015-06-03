@@ -1,5 +1,13 @@
 var generators = require('yeoman-generator');
 
+function dependencyObjectToArray(dependency) {
+    var dependencies = [];
+
+    Object.keys(dependency).forEach(function(key) {
+        dependencies.push(key + '@' + dependency[key]);
+    });
+}
+
 module.exports = generators.Base.extend({
     prompting: function () {
         var done = this.async();
@@ -24,10 +32,17 @@ module.exports = generators.Base.extend({
                         value: 'kraken'
                     }
                 ]
+            },
+            {
+                type: 'confirm',
+                name: 'runInstall',
+                message: 'Run npm install on new project?',
+                default: false
             }
         ], function (answers) {
             this.appName = answers.name;
             this.framework = answers.framework;
+            this.shouldRunInstall = answers.runInstall;
             done();
         }.bind(this));
     },
@@ -54,5 +69,30 @@ module.exports = generators.Base.extend({
             this.templatePath('common/jshintrc'),
             this.destinationPath('.jshintrc')
         );
+
+        this.package = package;
+    },
+    install: function() {
+        var dependencies;
+
+        if (this.shouldRunInstall) {
+            if (this.package.dependencies) {
+                dependencies = dependencyObjectToArray(this.package.dependencies);
+                this.npmInstall(dependencies);
+            }
+
+            if (this.package.devDependencies) {
+                dependencies = dependencyObjectToArray(this.package.devDependencies);
+                this.npmInstall(dependencies);
+            }
+        }
+    },
+    end: function() {
+        if (this.shouldRunInstall) {
+            // do grunt build if they chose kraken
+            if (this.framework === 'kraken') {
+                this.spawnCommand('grunt', ['build']);
+            }
+        }
     }
 });
