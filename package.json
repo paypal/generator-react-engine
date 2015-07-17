@@ -10,9 +10,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.paypal.com:vhwang/generator-react-engine.git"
+    "url": "git@github.com:paypal/generator-react-engine.git"
   },
   "publishConfig": {
-    "registry": "http://npm.paypal.com"
+    "registry": "https://registry.npmjs.org"
   }
 }
