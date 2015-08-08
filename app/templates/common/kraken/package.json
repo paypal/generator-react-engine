@@ -15,7 +15,7 @@
     "localizr": "^0.1.6",
     "node-jsx": "^0.13.3",
     "react": "^0.13.3",
-    "react-engine": "^1.5.0",
+    "react-engine": "^2.0.0",
     "react-router": "^0.13.3"
   },
   "devDependencies": {
