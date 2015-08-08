@@ -13,7 +13,8 @@
           "renderer": {
             "method": "create",
               "arguments": [{
-                  "reactRoutes": "path:./routes/react.jsx"
+                  "routes": "require:./routes/react.jsx",
+                  "routesFilePath": "path:./routes/react.jsx"
               }]
           }
       }
