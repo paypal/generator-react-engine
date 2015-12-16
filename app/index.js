@@ -65,7 +65,7 @@ module.exports = generators.Base.extend({
         }
 
         package = this.fs.readJSON(this.templatePath('common/' + this.framework + '/package.json'));
-        package.name = this.appName;
+        package.name = this.appName.replace(/ /g, '-').toLowerCase();
 
         this.fs.writeJSON(this.destinationPath('package.json'), package);
 
