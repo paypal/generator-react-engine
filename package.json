@@ -5,6 +5,9 @@
   "main": "app/index.js",
   "author": "Vu Hwang <vhwang@paypal.com>",
   "keywords": ["yeoman-generator", "react-engine"],
+  "contributors": [
+    "Sam Selvanathan <sjasel@gmail.com>"
+  ],
   "dependencies": {
     "yeoman-generator": "^0.18.0"
   },
