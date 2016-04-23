@@ -11,10 +11,10 @@
   "dependencies": {
     "browserify": "^9.0.4",
     "express": "^4.12.3",
-    "node-jsx": "^0.12.4",
-    "react": "^0.12.2",
-    "react-engine": "^2.0.0",
-    "react-router": "^0.12.4",
+    "node-jsx": "^0.13.3",
+    "react": "^0.14.0",
+    "react-engine": "^3.2.2",
+    "react-router": "^1.0.3",
     "reactify": "^1.1.0",
     "require-globify": "^1.1.0"
   }
