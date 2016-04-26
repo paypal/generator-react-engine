@@ -1,10 +1,13 @@
 {
   "name": "generator-react-engine",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "description": "A react-engine generator for Yeoman",
   "main": "app/index.js",
   "author": "Vu Hwang <vhwang@paypal.com>",
   "keywords": ["yeoman-generator", "react-engine"],
+  "contributors": [
+    "Sam Selvanathan <sjasel@gmail.com>"
+  ],
   "dependencies": {
     "yeoman-generator": "^0.18.0"
   },

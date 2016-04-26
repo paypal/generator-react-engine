@@ -16,13 +16,18 @@
 'use strict';
 
 var React = require('react');
-var Router = require('react-router');
+var ReactRouter = require('react-router');
+var Router = ReactRouter.Router;
+var Route = ReactRouter.Route;
+var IndexRoute = ReactRouter.IndexRoute;
 
-var App = require('../public/views/app.jsx');
+var Layout = require('../public/views/layout.jsx');
 var Account = require('../public/views/account.jsx');
 
 var routes = module.exports = (
-    <Router.Route path='/' handler={App}>
-        <Router.DefaultRoute name='account' handler={Account} />
-    </Router.Route>
+    <Router>
+        <Route path='/' component={Layout}>
+            <IndexRoute component={Account} />
+        </Route>
+    </Router>
 );
