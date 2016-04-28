@@ -1,19 +1,16 @@
 {
-    
-
     "middleware": {
-
-        "devtools": {
+        "construx": {
             "enabled": true,
             "priority": 35,
             "module": {
-                "name": "kraken-devtools",
+                "name": "construx",
                 "arguments": [
                     "path:./public",
                     "path:./.build",
-                    {   
+                    {
                         "copier": {
-                            "module": "kraken-devtools/plugins/copier",
+                            "module": "construx-copier",
                             "files": "**/*"
                         }
                     }
