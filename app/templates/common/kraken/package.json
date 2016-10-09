@@ -15,9 +15,10 @@
     "kraken-js": "^1.0.1",
     "localizr": "^0.1.6",
     "node-jsx": "^0.13.3",
-    "react": "^0.14.0",
-    "react-engine": "^3.2.2",
-    "react-router": "^1.0.3"
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-engine": "^4.0.0",
+    "react-router": "^2.4.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

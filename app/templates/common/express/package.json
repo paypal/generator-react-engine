@@ -12,9 +12,10 @@
     "browserify": "^9.0.4",
     "express": "^4.12.3",
     "node-jsx": "^0.13.3",
-    "react": "^0.14.0",
-    "react-engine": "^3.2.2",
-    "react-router": "^1.0.3",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-engine": "^4.0.0",
+    "react-router": "^2.4.0",
     "reactify": "^1.1.0",
     "require-globify": "^1.1.0"
   }
