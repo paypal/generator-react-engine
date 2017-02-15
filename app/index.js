@@ -23,7 +23,7 @@ module.exports = generators.Base.extend({
                 type: 'input',
                 name: 'name',
                 message: 'Your project name',
-                default: this.appname // Default to current folder name
+                default: 'react-engine-generator' // Default to current folder name
             },
             {
                 type: 'list',
