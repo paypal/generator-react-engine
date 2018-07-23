@@ -13,7 +13,6 @@
     "construx": "~0.0.1",
     "construx-copier": "~0.0.1",
     "kraken-js": "^1.0.1",
-    "localizr": "^0.1.6",
     "node-jsx": "^0.13.3",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
